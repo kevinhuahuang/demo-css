@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .square-no-background  {
+            height:60px;
+            width: 150px;
+        }
+        .square {
+            height:60px;
+            width: 150px;
+            background: #0d7bd5;
+        }
+    </style>
+</head>
+<body>
+<div class="square" style="text-align:center; line-height:60px;">60 * 150</div>
+<h3>inset</h3>
+<div class="square-no-background" style="box-shadow:inset 0 0 0 5px #060685; display: inline-block; margin-left:15px;">inset 阴影5px</div>
+<div class="square-no-background" style="box-shadow:0 0 0 5px #060685; display: inline-block; margin-left:15px;">outset 阴影5px</div>
+<p></p>
+<div class="square-no-background" style="box-shadow:inset 0 0 10px 0 #060685; display: inline-block; margin-left:15px;">inset 模糊10</div>
+<div class="square-no-background" style="box-shadow:inset 0 0 50px 0 #060685; display: inline-block; margin-left:15px;">inset 模糊50</div>
+<div class="square-no-background" style="box-shadow:inset 0 0 100px 0 #060685; display: inline-block; margin-left:15px;">inset 模糊100</div>
+<p></p>
+<div class="square-no-background" style="box-shadow: 0 0 10px 0 #060685; display: inline-block; margin-left:15px;">outset 模糊10</div>
+<div class="square-no-background" style="box-shadow: 0 0 50px 0 #060685; display: inline-block; margin-left:15px;">outset 模糊50</div>
+<div class="square-no-background" style="box-shadow: 0 0 100px 0 #060685; display: inline-block; margin-left:15px;">outset 模糊100</div>
+<h3>inset</h3>
+<p>inset -5px -5px </p> <!--inset时 offset-x,offset-y的值的意义和外阴影是相反的，正值是左边，上边。负值是右边，下边-->
+<div class="square" style="box-shadow:inset -5px -5px 4px 2px #060685; display: inline-block">模糊4px 阴影2px</div>
+<div class="square" style="box-shadow:inset -5px -5px 2px 4px #060685; display: inline-block">模糊2px 阴影2px</div>
+<div class="square" style="box-shadow:inset -5px -5px 0 2px #060685; display: inline-block">模糊0 阴影2px</div>
+<div class="square" style="box-shadow:inset -5px -5px 0 4px #060685; display: inline-block">模糊0 阴影4px</div>
+<p>inset 模糊4px 阴影4px </p> <!--inset时 offset-x,offset-y的值的意义和外阴影是相反的，正值是左边，上边。负值是右边，下边-->
+<div class="square" style="box-shadow:inset -5px -5px 4px 4px #060685; display: inline-block">-5px -5px</div>
+<div class="square" style="box-shadow:inset 5px -5px 4px 4px #060685; display: inline-block">5px -5px</div>
+<div class="square" style="box-shadow:inset -5px 5px 4px 4px #060685; display: inline-block">-5px 5px</div>
+<div class="square" style="box-shadow:inset 5px 5px 4px 4px #060685; display: inline-block">5px 5px</div>
+<h3>outset</h3><!--outset是默认的，不用指明，指明会让box-shadow失效-->
+<p> -5px -5px </p> <!--inset时 offset-x,offset-y的值的意义和外阴影是相反的，正值是左边，上边。负值是右边，下边-->
+<div class="square" style="box-shadow: -5px -5px 4px 2px #060685; display: inline-block; margin-left: 15px;">模糊4px 阴影2px</div>
+<div class="square" style="box-shadow: -5px -5px 0 2px #060685; display: inline-block; margin-left: 15px;">模糊0 阴影2px</div>
+<div class="square" style="box-shadow: -5px -5px 0 4px #060685; display: inline-block; margin-left: 15px;">模糊0 阴影4px</div>
+<p> 模糊4px 阴影4px </p> <!--inset时 offset-x,offset-y的值的意义和外阴影是相反的，正值是左边，上边。负值是右边，下边-->
+<div class="square" style="box-shadow: -5px -5px 4px 4px #060685; display: inline-block; margin-left: 15px;">-5px -5px</div>
+<div class="square" style="box-shadow: 5px -5px 4px 4px #060685; display: inline-block; margin-left: 15px;">5px -5px</div>
+<div class="square" style="box-shadow: -5px 5px 4px 4px #060685; display: inline-block; margin-left: 15px;">-5px 5px</div>
+<div class="square" style="box-shadow: 5px 5px 4px 4px #060685; display: inline-block; margin-left: 15px;">5px 5px</div>
+</body>
+</html>

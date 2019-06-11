@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example</title>
+    <style>
+        /* transition 属性设置元素过渡效果
+        语法：transition: property duration timing-function delay; 默认值 all 0s ease 0s
+        property: 指定CSS属性的name, transition效果
+        duration: transition效果需要指定多少秒或毫秒才能完成
+        timing-function: 指定transition效果的转速度曲线:
+            linear ease ease-in ease-out ease-in-out cubic-bezier(n,n,n)
+        delay: 定义transition效果开始的时候
+        */
+        .circle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 80px;
+            height: 80px;
+            background-color: lightgreen;
+            transition: all 2s ease 0s
+        }
+        .circle:hover {
+            cursor: pointer;
+            width: 80px;
+            height: 80px;
+            border-radius: 100px;
+            background-color: #feff65;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+</body>
+</html>

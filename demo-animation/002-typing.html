@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>typing</title>
+    <style>
+        /*
+        Steps(<number_of_steps>，<direction>)
+            steps()是一个timing function，允许我们将动画或者过渡分割成段，而不是从一种状态持续到另一种状态的过渡。
+            这个函数有两个参数——第一个参数是一个正值，指定我们希望动画分割的段数。
+            第二个参数定义了这个要点 在我们的@keyframes中申明的动作将会发生的关键。
+            这个值是可选的，在没有传递参数时，默认为”end”。
+
+
+            steps函数可以实现分步过渡。steps 函数指定了一个阶跃函数，
+            第一个参数指定了时间函数中的间隔数量（必须是正整数）；
+            第二个参数可选，接受 start 和 end 两个值，指定在每个间隔的起点或是终点发生阶跃变化，默认为 end。
+            */
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+        }
+
+        @keyframes blink-caret {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        h1 {
+            font: bold 200% Consolas, Monaco, monospace;
+            border-right: .1em solid;
+            width: 16.5em;
+            /* fallback */
+            width: 30ch;
+            /* # of chars */
+            margin: 2em 1em;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 20s steps(30, end), /* # of steps = # of chars */
+            blink-caret .5s step-end infinite alternate;
+        }
+    </style>
+</head>
+
+<body>
+<h1>Typing animation by Lea Verou.</h1>
+</body>
+
+</html>

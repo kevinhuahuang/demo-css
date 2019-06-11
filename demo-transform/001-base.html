@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .square {
+            width: 40px;
+            height: 40px;
+            background-color: #528CE0;
+        }
+    </style>
+</head>
+<body>
+    <p>原矩形</p>
+    <div class="square"></div>
+    <p>旋转rotate</p>
+    <div style="border: solid red 1px;">
+        <p>2D轴旋转45度</p>
+        <div style="height: 40px; border: solid black 1px;">
+            <div class="square" style="transform: rotate(45deg)"></div><!--与rotateZ(45deg)效果一致-->
+        </div>
+        <p>X轴旋转45度</p>
+        <div style="height: 40px; border: solid black 1px;">
+            <div class="square" style="transform: rotateX(45deg)"></div><!--与rotateZ(45deg)效果一致-->
+        </div>
+        <p>Y轴旋转45度</p>
+        <div style="height: 40px; border: solid black 1px;">
+            <div class="square" style="transform: rotateY(45deg)"></div><!--与rotateZ(45deg)效果一致-->
+        </div>
+        <p>Z轴旋转45度</p>
+        <div style="height: 40px; border: solid black 1px;">
+            <div class="square" style="transform: rotateZ(45deg)"></div><!--与rotateZ(45deg)效果一致-->
+        </div>
+    </div>
+    <p>translate平移</p>
+    <div style="border: solid red 1px;">
+        <p>2D平移(10px, 10px)</p>
+        <div style="height: 40px; border: solid black 1px;">
+            <div class="square" style="transform: translate(10px, 10px)">translate(10px, 10px)</div>
+        </div>
+        <p>X轴平移</p>
+        <div style="height: 40px; border: solid black 1px;">
+            <div class="square" style="transform: translateX(10px)">translateX(10px)</div>
+        </div>
+        <p>Y轴平移</p>
+        <div style="height: 40px; border: solid black 1px;">
+            <div class="square" style="transform: translateY(10px)">translateY(10px)</div>
+        </div>
+        <p>Z轴平移</p>
+        <div style="height: 40px; border: solid black 1px;">
+            <div class="square" style="transform: translateZ(10px)">translateZ(10px)</div>
+        </div>
+    </div>
+    <p>scale缩放</p>
+    <div style="border: solid red 1px;">
+        <p>2D缩放(10px, 10px)</p>
+        <div style="height: 40px; border: solid black 1px;">
+            <div class="square" style="transform: scale(0.9, 0.8)">scale(10px, 10px)</div>
+        </div>
+        <p>X轴缩放</p>
+        <div style="height: 40px; border: solid black 1px;">
+            <div class="square" style="transform: scaleX(0.9)">scaleX(10px)</div>
+        </div>
+        <p>Y轴缩放</p>
+        <div style="height: 40px; border: solid black 1px;">
+            <div class="square" style="transform: scaleY(0.9)">scaleY(10px)</div>
+        </div>
+        <p>Z轴缩放</p>
+        <div style="height: 40px; border: solid black 1px;">
+            <div class="square" style="transform: scaleZ(0.9)">scaleZ(10px)</div>
+        </div>
+    </div>
+    <p>skew倾斜</p>
+    <div style="border: solid red 1px;">
+        <p>2D倾斜(45deg, 20deg)</p>
+        <div style="height: 40px; border: solid black 1px;">
+            <div class="square" style="transform: skew(45deg, 20deg)">skew(45deg, 20deg)</div>
+        </div>
+        <p>X轴倾斜 45deg</p>
+        <div style="height: 40px; border: solid black 1px;">
+            <div class="square" style="transform: skewX(45deg)">skewX(45deg, 45deg)</div>
+        </div>
+        <p>Y轴倾斜 45deg</p>
+        <div style="height: 40px; border: solid black 1px;">
+            <div class="square" style="transform: skewY(45deg)">skewY(45deg, 45deg)</div>
+        </div>
+        <p>无Z轴倾斜</p>
+    </div>
+    <!--<p>矩阵matrix</p>-->
+    <!--<div class="square"></div>-->
+</body>
+</html>
